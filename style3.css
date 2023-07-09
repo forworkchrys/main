@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Kanit", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff0d0;
+  overflow-x: hidden;
+}
+
+.parallax {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.parallax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+  object-fit: cover;
+}
+/* end parallax */
+
+.sec1 {
+  position: relative;
+  display: flex;
+  padding: 10px;
+  background: #e2f6cb;
+  background-image: url(art3/bg301.PNG);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.sec2 {
+  position: relative;
+  display: flex;
+  padding: 10px;
+  background: #e2f6cb;
+  background-image: url(art3/bg302.PNG);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.sec3 {
+  position: relative;
+  display: flex;
+  
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.sec4 {
+  position: relative;
+  display: flex;
+  background-image: url(art3/bg303.PNG);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* 3หลัก 3ล */
+#textcolum_h1 {
+  font-size: 4rem;
+  color: #4a2b11;
+  padding: 0 3rem;
+}
+
+#textcolum1_h2 {
+  color: #d67f0e;
+  font-size: 4.375rem;
+}
+
+#textcolum_p {
+  color: #4a2b11;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+
+.col-lg-4 {
+  /* margin-bottom:1rem ; */
+  text-align: center;
+}
+
+/* .col-lg-4 p {
+  font-weight: 200;
+  font-size: 1.5rem;
+} */
+
+/* ป้องกันได้ ควบคุมได้ */
+.contai_1 {
+  margin-bottom: 1.5rem;
+}
+
+#content_h2 {
+  font-size: 2.5rem;
+  color: #4a2b11;
+  font-weight: 600;
+}
+
+.contai_1 .order-1 p {
+  color: #144a4a;
+  text-indent: 2em;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+#dust4 {
+  width: 400px;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+}
+
+#text_p {
+  color: #144a4a;
+  margin-left: 10px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  align-items: center;
+  justify-content: center;
+}
+
+/* flipcard */
+.container .con1 {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  /* max-width: 400px; */
+}
+.flipcard {
+  perspective: 1000px;
+  margin-bottom: 1.5rem;
+}
+.flipcard .flipcard-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.flipcard .card-front,
+.flipcard .card-back {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  backface-visibility: hidden;
+  transition: all 0.3s;
+}
+.flipcard .card-front {
+  z-index: 2;
+}
+.flipcard .card-front::after {
+  content: "";
+  display: block;
+  width: 0;
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  border-width: 16px 16px 0 0;
+  border-style: solid;
+  border-color: #999 #fff;
+  border-radius: 0.25rem 0 0 0;
+}
+.flipcard .card-back {
+  position: absolute;
+  top: 0;
+  text-align: left;
+  z-index: 1;
+  transform: rotateY(180deg);
+  overflow-y: auto;
+}
+/* the flippy magic */
+.flipcard:hover .flipcard-wrap {
+  transform: rotateY(-180deg);
+}
+/* end flipcard */
+
+/* วิธีการ */
+#titel02 {
+  color: #4a2b11;
+  font-size: 2.813rem;
+  margin-top: 1.5rem;
+}
+
+#textflip_p {
+  color: rgb(30, 24, 85);
+  font-size: 1.125rem;
+  padding: 10px;
+}
+
+.contai_1 {
+  align-items: center;
+  margin: auto;
+
+  /* border: 3px solid green; */
+  padding: 6px;
+}
+
+/* footer */
+.blog-footer {
+  padding: 2.5rem 0;
+  padding-top: 5em;
+  color: #727272;
+  text-align: center;
+  /* background-color: #f9f9f9; */
+  background-image: url(art/footer.PNG);
+  background-size: cover;
+
+  /* border-top: 0.05rem solid #e5e5e5; */
+}
+
+/* end footer */
+
+/* lapyops/destops,992 and up */
+@media (max-width: 992px) {
+  header .navbar-brand {
+    font-size: 16px;
+    padding-left: -10px;
+    transition: 0.2s;
+  }
+
+  .navbar-collapse ul li a {
+    font-size: 14px;
+  }
+
+  .parallax img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /* 3หลัก 3ล */
+  #textcolum_h1 {
+    font-size: 3rem;
+    transition: 0.2s;
+  }
+
+  #content_h2 {
+    font-size: 1.75rem;
+    color: #4a2b11;
+    text-align: center;
+  }
+
+  /* ป้องกันได้ ควบคุมได้ */
+  .contai_1 .order-1 p {
+    color: #144a4a;
+    text-indent: 2em;
+    font-size: 1.125rem;
+    font-weight: 300;
+    transition: 0.2s;
+    align-items: center;
+  }
+
+  #dust4 {
+    width: 350px;
+    height: 350px;
+    align-items: center;
+    transition: 0.2s;
+  }
+
+  #text_p {
+    color: #144a4a;
+    margin-left: 10px;
+    font-size: 1.125rem;
+    font-weight: 300;
+  }
+
+  /* วิธีการ */
+  #titel02 {
+    color: #4a2b11;
+    font-size: 2.15rem;
+    margin-top: 1rem;
+  }
+
+  #textflip_p {
+    color: rgb(30, 24, 85);
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  #flip1_h5 {
+    font-size: 1.125rem;
+    /* font-weight: 400; */
+  }
+
+  #flip1_p {
+    font-size: 1rem;
+    margin: 7px;
+    text-align: left;
+  }
+}
+
+/* landscape tabelts */
+@media (max-width: 768px) {
+  .parallax img {
+    height: 100vh;
+    width: 100%;
+    
+  }
+
+  #namep3 {
+    position: relative;
+    width: 700px;
+    height: 700px;
+    transition: 0.2s;
+  }
+
+  /* 3หลัก 3ล */
+  #textcolum_h1 {
+    font-size: 2.5rem;
+  }
+
+  #textcolum1_h2 {
+    color: #d67f0e;
+    font-size: 3.5rem;
+  }
+
+  /* ป้องกันได้ ควบคุมได้ */
+  .contai_1 .order-1 p {
+    text-indent: 2em;
+    font-size: 1rem;
+    transition: 0.2s;
+  }
+
+  #dust4 {
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    transition: 0.2s;
+  }
+
+  #text_p {
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+
+  #content_h2 {
+    font-size: 1.5rem;
+    align-items: center;
+    justify-self: center;
+  }
+
+  /* วิธีการ */
+  #titel02 {
+    color: #4a2b11;
+    font-size: 2.15rem;
+    margin-top: 1rem;
+  }
+
+  #textflip_p {
+    color: rgb(30, 24, 85);
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  #flip1_h5 {
+    font-size: 1.063rem;
+    /* font-weight: 400; */
+  }
+
+  #flip1_p {
+    font-size: 1rem;
+    margin: 2px;
+    align-items: center;
+    /* justify-content: center; */
+  }
+
+  .card-front img {
+    height: 220px;
+    padding: auto;
+  }
+
+  .blog-footer h4{
+    font-size: 1.125rem;
+  }
+  .blog-footer p{
+    font-size: 1rem;
+  }
+}
+
+
+/* phon, less then 600px wide */
+@media (max-width: 600px) {
+  .navbar-brand {
+    margin-left: 2%;
+  }
+  .navbar-toggler {
+    margin-right: 2%;
+  }
+
+  #MENU ul li a {
+    margin-left: 3%;
+  }
+
+  .parallax img {
+    height: 100vh;
+    width: 100%;
+  }
+
+  #namep3 {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    margin-top: 50%;
+    transition: 0.2s;
+  }
+  
+  #flip1_p {
+    font-size: 1.25rem;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-front img {
+    height: 350px;
+    padding: auto;
+  }
+}

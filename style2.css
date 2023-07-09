@@ -1,0 +1,778 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Kanit", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5b192;
+  overflow-x: hidden;
+}
+
+.parallax_p2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   background-size: cover;
+  height: 100vh;
+  
+}
+
+.parallax_p2 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+  object-fit: cover;
+}
+
+/* มารู้จักโรคภูมิแพ้ */
+.topic1 {
+  position: relative;
+  /* padding: 100px; */
+  background-color: #ecb59b;
+  background-image: url(art2/BG03.PNG);
+  display: flex;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.topic1 .container .title-h2 {
+  font-size: 3.5rem;
+  text-align: center;
+  color: #301c1c;
+  border-radius: 100px;
+  /* font-weight: bolder; */
+  padding: 0 3rem;
+}
+
+.topic1-flex {
+  margin-top: 50px;
+  text-align: center;
+  display: flex;
+  height: auto;
+}
+
+.topic1-flex .left-box,
+.topic1-flex .right-box {
+  width: 50%;
+}
+
+.topic1-flex img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* .topic1-flex h3 {
+  font-size: 1.5rem;
+  background-color: rgb(182, 231, 148);
+  padding: 10px 20px;
+  border-radius: 100px;
+} */
+
+.topic1-flex p {
+  padding: 3rem;
+  text-indent: 4.5rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.topic1-flex .right-box,
+.topic1-flex .left-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+.bg-1 {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  margin-top: -960px;
+}
+
+/* มารู้จักไรฝุ่น */
+.malaria-info h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: rgb(182, 231, 148);
+  padding: 10px 20px;
+  border-radius: 100px;
+  margin: 10px 150px;
+}
+
+.malaria-info p {
+  padding: 3rem;
+  text-indent: 4rem;
+  font-size: 1.125rem;
+  background-color: rgba(255, 255, 255, 0.861);
+  border-radius: 10px;
+  font-weight: 300;
+}
+
+/* อาการตอบสนอง */
+.equipname {
+  text-align: center;
+}
+
+.equipname h2 {
+  font-size: 3.5rem;
+  text-align: center;
+  color: #301c1c;
+  border-radius: 100px;
+  /* font-weight: bolder; */
+  padding: 0 3rem;
+}
+
+.equipname p {
+  text-align: center;
+  font-size: 1.25rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  color: #363434;
+}
+
+.bg-img {
+  background-image: url(art2/BG04.PNG);
+  background-color: #ecb59b;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 25;
+}
+
+.topic2-wrap {
+  width: 100%;
+  /* background-color: #d3e9c4; */
+  border-radius: 10px;
+  /* border: 1px solid red; */
+}
+
+.topic2 {
+  margin-top: 30px;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.topic2 .equip-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+  margin: 40px;
+}
+
+.topic2 .equip-container .equip {
+  text-align: center;
+  border-radius: 5px;
+  padding: 3rem 2rem;
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  outline: 0.1rem solid #ccc;
+  outline-offset: -1.5rem;
+  cursor: pointer;
+}
+
+.topic2 .equip-container .equip:hover {
+  outline: 0.2rem solid #108864;
+  outline-offset: 0;
+  transition: all 0.2s linear;
+  background-color: #cfffe1;
+}
+
+.topic2 .equip-container .equip img {
+  height: 16rem;
+}
+
+.topic2 .equip-container .equip:hover img {
+  transform: scale(0.9);
+  transition: all 0.2s linear;
+}
+
+.topic2 .equip-container .equip .detail {
+  border: 1px solid #134e36;
+  border-radius: 100px;
+  margin: 5px 80px;
+}
+
+.topic2 .equip-container .equip h3 {
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.topic2 .equip-container .equip:hover h3 {
+  color: #4dcfa8;
+}
+
+/* popup */
+.container .popup-equip {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 200;
+  display: none;
+}
+
+.container .popup-equip span {
+  position: absolute;
+  top: 60px;
+  right: 30px;
+  font-size: 50px;
+  font-weight: bolder;
+  color: white;
+  cursor: pointer;
+  z-index: 200;
+}
+
+.container .popup-equip img {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* border: 5px solid #fff; */
+  border-radius: 10px;
+  width: 550px;
+  object-fit: cover;
+  background-color: #fff;
+  z-index: 200;
+}
+
+/* End popup */
+/* End อาการตอบสนอง */
+
+/* footer */
+.blog-footer {
+  padding: 2.5rem 0;
+  padding-top: 5em;
+  color: #727272;
+  text-align: center;
+  /* background-color: #f9f9f9; */
+  background-image: url(art/footer.PNG);
+  background-size: cover;
+
+  /* border-top: 0.05rem solid #e5e5e5; */
+}
+
+/* end footer */
+
+/* sec-01 ทราบได้อย่างไรว่าเป็น*/
+.sec-01 {
+  position: relative;
+  display: flex;
+  padding: 80px 100px;
+  background-color: #ecb59b;
+  background-image: url(art2/BG05.PNG);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.sec-01 .container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-title {
+  font-size: 3.5rem;
+  margin-bottom: 50px;
+  color: #301c1c;
+}
+
+.content {
+  position: relative;
+  width: 1300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .image {
+  position: relative;
+  width: 750px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.content .image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.content .text-box {
+  z-index: 111;
+  background: rgba(255, 255, 255, 0.61);
+  backdrop-filter: blur(20px);
+  padding: 40px;
+  max-width: 500px;
+  border: 1px solid rgb(255, 255, 255, 0.1);
+  border-radius: 10px;
+  transform: translate(-80px, 50px);
+  text-indent: 2.5rem;
+}
+
+.content .text-box h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #301c1c;
+}
+
+.content .text-box p {
+  font-size: 1.125rem;
+  color: #301c1c;
+  font-weight: 300;
+}
+
+/* สร้างไอคอน */
+
+/* .media-icons {
+  margin-top: 100px;
+} */
+/* .media-icons a{
+    color: #fff;
+    font-size: 2em;
+    margin: 60px;
+} */
+
+/* หมายเหตุ */
+.sec1 {
+  position: relative;
+  padding: 20px;
+  background: #f8b596;
+}
+
+.sec1 .main-title {
+  text-align: center;
+  color: #301c1c;
+  font-size: 3.5rem;
+}
+
+.sec1 .bd-callout-warning {
+  border-left-color: #f0ad4e;
+}
+
+.bd-callout {
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid #e9ecef;
+  border-left-width: 0.25rem;
+  border-radius: 0.25rem;
+  background-color: #e9ecef;
+}
+
+.sec1 .bd-callout-warning .text-warning1 {
+  font-size: 1.25rem;
+  font-weight: 200;
+}
+
+.row-cols-7 {
+  font-size: 2rem;
+}
+
+/* .sec1 .bd-callout-warning .text-warning1 {
+  font-size: 24px;
+  font-weight: 300;
+} */
+
+/* responsive popup-image */
+
+@media (max-width: 992px) {
+  .bg-img .container .popup-equip img {
+    width: 60%;
+    align-items: center;
+  }
+}
+
+/* lapyops/destops,992 and up */
+@media (max-width: 992px) {
+  
+  header .navbar-brand {
+    font-size: 16px;
+    padding-left: -10px;
+  }
+
+  .navbar-collapse ul li a {
+    font-size: 14px;
+  }
+
+  .parallax_p2 img {
+    height: 90vh;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .topic1 {
+    box-sizing: border-box;
+  }
+
+  .topic1 .container .title-h2 {
+    font-size: 2.5rem;
+  }
+
+  .malaria-info p {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  .malaria-info h2 {
+    font-size: 1.25rem;
+    text-align: center;
+    background-color: rgb(182, 231, 148);
+    padding: 5px 20px;
+    border-radius: 100px;
+    margin: 10px 20px;
+  }
+
+  /* อาการตอบสนอง */
+  .equipname h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 0;
+  }
+
+  .equipname p {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+
+  /* <!-- sec-01 ทราบได้อย่างไรว่าเป็น --> */
+  .sec-01 .container .row .content {
+    /* padding: 45px 10% 35px; */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+  }
+
+  .content .text-box {
+    padding: 40px;
+    max-width: 750px;
+    transform: translate(0, 20px);
+    text-indent: 2.5rem;
+    background: rgba(255, 255, 255, 0.87);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255, 0.1);
+    border-radius: 10px;
+  }
+
+  .main-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #301c1c;
+  }
+
+  .content .text-box h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #301c1c;
+  }
+
+  .content .image {
+    position: relative;
+    width: 750px;
+    height: 400px;
+    overflow: hidden;
+    background-size: cover;
+  }
+
+  /* หมายเหตุ รักษาโรคภูมิแพ้ให้หายขาดได้หรือไม่ */
+  .sec1 .main-title {
+    font-size: 2.5rem;
+  }
+
+  .sec1 .main-title .text_p {
+    font-size: 1rem;
+  }
+
+  .sec1 .bd-callout-warning .text-warning1 {
+    font-size: 1.1rem;
+    font-weight: 250;
+  }
+
+  .row-cols-7 {
+    font-size: 1.5rem;
+  }
+}
+
+/* landscape tabelts */
+@media (max-width: 768px) {
+  .parallax_p2 img {
+    height: 80vh;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .topic1 .container .title-h2 {
+    font-size: 1.75rem;
+  }
+
+  .malaria-info h2 {
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 5px 20px;
+    border-radius: 100px;
+    margin: 10px 20px;
+  }
+
+  .malaria-info p {
+    padding: 1.25rem;
+    text-indent: 2rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    font-weight: 300;
+  }
+
+  .equipname h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0;
+  }
+
+  .equipname p {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+
+  .bg-img .container {
+    align-items: center;
+  }
+
+  .sec-01 .container .row .content {
+    padding: 45px 10% 35px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+  }
+
+  .content .text-box {
+    padding: 40px;
+    max-width: 750px;
+    transform: translate(0, 20px);
+    text-indent: 1rem;
+    background: rgba(255, 255, 255, 0.87);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255, 0.1);
+    border-radius: 10px;
+  }
+
+  .main-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #301c1c;
+  }
+
+  .content .text-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #301c1c;
+  }
+
+  .content .text-box p {
+    font-size: 1rem;
+    color: #301c1c;
+    font-weight: 300;
+  }
+
+  .content .image {
+    position: relative;
+    width: 750px;
+    height: 400px;
+    overflow: hidden;
+    background-size: cover;
+  }
+
+  .sec1 .main-title {
+    font-size: 2.5rem;
+  }
+
+  .sec1 .main-title .text_p {
+    font-size: 1rem;
+  }
+
+  .sec1 .bd-callout-warning .text-warning1 {
+    font-size: 1.1rem;
+    font-weight: 250;
+  }
+
+  .row-cols-7 {
+    font-size: 1.5rem;
+  }
+}
+
+/* phon, less then 600px wide */
+@media (max-width: 600px) {
+  .navbar-brand {
+    margin-left: 2%;
+  }
+  .navbar-toggler {
+    margin-right: 2%;
+  }
+
+  #MENU ul li a {
+    margin-left: 3%;
+  }
+
+  .parallax_p2 img {
+    height: 80vh;
+    width: 100%;
+  }
+
+  #namep2 {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin-right: 5%;
+   margin-top: -50%;
+    transition: .2s;
+  }
+
+  /* อาการตอบสนอง */
+  .equipname h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0;
+  }
+
+  .equipname p {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+
+  .topic2 .equip-container {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .topic2 .equip-container .equip h3{
+    font-size: 1.25rem;
+  }
+
+  /* <!-- sec-01 ทราบได้อย่างไรว่าเป็น --> */
+  .sec-01 .container .row .content {
+    /* padding: 45px 10% 35px; */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+  }
+
+  .content .text-box {
+    padding: 40px;
+    max-width: 28.125rem;
+    transform: translate(0, 20px);
+    text-indent: 2.5rem;
+    background: rgba(255, 255, 255, 0.87);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255, 0.1);
+    border-radius: 10px;
+  }
+
+  .main-title {
+    font-size: 1.75rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #301c1c;
+  }
+
+  .content .text-box h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #301c1c;
+  }
+
+  .content .image {
+    position: relative;
+    width: 28.125rem;
+    height: 12.5rem;
+    overflow: hidden;
+    background-size: cover;
+  }
+
+    /* หมายเหตุ รักษาโรคภูมิแพ้ให้หายขาดได้หรือไม่ */
+  .bd-callout {
+    max-width: 500px;
+  }
+  .sec1 .main-title {
+    font-size: 2rem;
+  }
+
+  .sec1 .main-title .text_p {
+    font-size: 1rem;
+  }
+
+  .sec1 .bd-callout-warning .text-warning1 {
+    font-size: 1rem;
+    font-weight: 250;
+  }
+
+  .row-cols-7 {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  /* footer */
+.blog-footer {
+  padding: 2rem 0;
+  padding-top: 5em;
+}
+
+/* end footer */
+
+
+}

@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Kanit", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Map */
+
+.cid-scfXaRs9Yh {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #efefef;
+}
+
+.google-map {
+  height: 400px;
+  margin: 20px 0;
+  border-radius: 5px;
+  border: 1px solid silver;
+}
+
+#map2-5h {
+  background-color: #d2c7bc;
+}
+
+/* footer */
+.blog-footer {
+  padding: 2.5rem 0;
+  padding-top: 5em;
+  color: #727272;
+  text-align: center;
+  /* background-color: #f9f9f9; */
+  background-image: url(art/footer.PNG);
+  background-size: cover;
+
+  /* border-top: 0.05rem solid #e5e5e5; */
+}
+
+/* end footer */
+
+/* lapyops/destops,992 and up */
+@media (max-width: 992px) {
+  header .navbar-brand {
+    font-size: 16px;
+    padding-left: -10px;
+    transition: 0.2s;
+  }
+
+  .navbar-collapse ul li a {
+    font-size: 14px;
+  }
+
+  #text-h1 {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  #text-h3 {
+    font-size: 1.75rem;
+    font-weight: 400;
+  }
+}
+
+/* phon, less then 600px wide */
+@media (max-width: 600px) {
+  .navbar-brand {
+    margin-left: 2%;
+  }
+  .navbar-toggler {
+    margin-right: 2%;
+  }
+
+  #MENU ul li a {
+    margin-left: 3%;
+  }
+  #text-h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  #text-p {
+    font-size: 1rem;
+  }
+
+  #img {
+    width: 15px;
+    height: 15px;
+  }
+  .col-lg-6 {
+    padding: 20px;
+  }
+}

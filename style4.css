@@ -1,0 +1,458 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Kanit", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff0d0;
+  overflow-x: hidden;
+}
+/* parallax */
+.parallax {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.parallax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+  object-fit: cover;
+}
+/* End parallax */
+
+/* หมายเหตุ */
+.sec1 {
+  position: relative;
+  display: flex;
+  /* padding: 1rem; */
+  /* background: #b98b26; */
+  justify-content: center;
+  align-items: center;
+  /* background-color: #6c9f76; */
+}
+
+.sec1 .bd-callout-warning {
+  border-left-color: #f0ad4e;
+}
+
+.bd-callout {
+  margin: 1rem;
+  padding: 1rem;
+  /* margin-top: 1rem;
+    margin-bottom: 1.25rem; */
+  border: 1px solid #e9ecef;
+  border-left-width: 1rem;
+  border-radius: 0.25rem;
+  background-color: #ffed9a;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+}
+
+.sec1 .bd-callout-warning .text-warning1 svg {
+  color: #982612;
+  margin-bottom: 8px;
+}
+
+.sec1 .bd-callout-warning .text-head {
+  font-size: 1.25rem;
+  color: #982612;
+}
+
+.sec1 .bd-callout-warning .text-warning1 {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+/* ผ้ากันไรฝุ่น */
+.sec2 {
+  background-image: url(art4/bg401.PNG);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sec2 .text_h1 {
+  font-size: 3rem;
+  color: #4a2b11;
+}
+
+.sec2 .pricing-header {
+  max-width: 90%;
+}
+
+.sec2 .pricing-header .text_p {
+  font-size: 1.125rem;
+}
+
+/* colum 3 อัน */
+
+#card-text {
+  font-size: 1.125rem;
+  color: #474545;
+}
+
+#text-head4 {
+  font-size: 1.5rem;
+  background-color: #89ff918e;
+  color: #4a2b11;
+}
+
+.sec2 .row .col .card-body p {
+  font-size: 1.125rem;
+  justify-content: center;
+  margin-top: 1rem;
+  color: #474545;
+}
+
+.sec2 .row .col .card-body {
+  backdrop-filter: blur(20px);
+  background-color: #fff;
+}
+
+.sec2 .row .col .card-header {
+  background-color: #e7fff9df;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgb(255, 255, 255, 0.1);
+}
+
+.sec2 .row .col .card-header h4 {
+  color: #000000;
+}
+
+/* หมายเหตุ 2 */
+.sec2 {
+  position: relative;
+  display: flex;
+  padding: 1rem;
+  /* background: #b98b26; */
+  justify-content: center;
+  align-items: center;
+}
+
+.sec2 .bd-callout-warning {
+  border-left-color: #5b88cfdf;
+}
+
+.bd-callout2 {
+  margin: 1rem;
+  padding: 1rem;
+  /* margin-top: 1rem;
+    margin-bottom: 1.25rem; */
+  border: 1px solid #e9ecef;
+  border-left-width: 1rem;
+  border-radius: 0.25rem;
+  background-color: #f5fdffdf;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+}
+
+.sec2 .bd-callout-warning .text-head {
+  font-size: 1.25rem;
+  color: #982612;
+}
+
+.sec2 .bd-callout-warning .text-warning1 {
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+/* ผลิตภัณฑ์รวม */
+.contai_1 {
+  margin-bottom: 1.5rem;
+}
+
+#content_h2 {
+  font-size: 2.5rem;
+  color: #4a2b11;
+  font-weight: 600;
+}
+
+#ele00 {
+  width: 500px;
+  height: 500px;
+}
+
+#text_p {
+  color: #144a4a;
+  margin-left: 10px;
+  font-size: 1.25rem;
+  font-weight: 300;
+  align-items: center;
+  justify-content: center;
+  text-indent: 2em;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 1rem;
+  box-shadow: 8px 8px 8px rgba(60, 84, 61, 0.178);
+}
+
+/* footer */
+.blog-footer {
+  padding: 2.5rem 0;
+  padding-top: 5em;
+  color: #727272;
+  text-align: center;
+  /* background-color: #f9f9f9; */
+  background-image: url(art/footer.PNG);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* border-top: 0.05rem solid #e5e5e5; */
+}
+
+/* end footer */
+
+/* น้ายาซัก */
+.contai_1 {
+  align-items: center;
+  margin: auto;
+
+  /* border: 3px solid green; */
+  padding: 10px;
+}
+
+/* lapyops/destops, 2000 and up */
+@media (min-width: 2000px) {
+  .sec2 .row .col .card-body img {
+    margin-left: 25%;
+    transition: 0.2s;
+  }
+
+  .bd-callout2 {
+    justify-content: center;
+    max-width: 2200px;
+    transition: 0.2s;
+  }
+
+  .sec2 .bd-callout-warning .text-head {
+    font-size: 1.5rem;
+    transition: 0.2s;
+  }
+
+  .sec2 .bd-callout-warning .text-warning1 {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+
+  .bd-callout {
+    max-width: 2000px;
+  }
+
+  .sec1 .bd-callout-warning .text-warning1 svg {
+    margin-bottom: 8px;
+  }
+
+  .sec1 .bd-callout-warning .text-head {
+    font-size: 1.5rem;
+    color: #982612;
+  }
+
+  .sec1 .bd-callout-warning .text-warning1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* lapyops/destops,992 and up */
+@media (max-width: 992px) {
+  header .navbar-brand {
+    font-size: 16px;
+    padding-left: -10px;
+    transition: 0.2s;
+  }
+
+  .navbar-collapse ul li a {
+    font-size: 14px;
+  }
+
+  .parallax img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /* ผ้ากันไรฝุ่น */
+  .sec2 .text_h1 {
+    font-size: 2rem;
+  }
+
+  .sec2 .pricing-header {
+    max-width: 100%;
+  }
+
+  .sec2 .pricing-header .text_p {
+    font-size: 1rem;
+  }
+
+  /* colum 3 อัน */
+
+  #card-text {
+    font-size: 1rem;
+    color: #474545;
+  }
+
+  #text-head4 {
+    font-size: 1.25rem;
+  }
+
+  /* หมายเหตุอันที่ 2 */
+  .sec2 .bd-callout-warning .text-head {
+    font-size: 1.063rem;
+    transition: 0.2s;
+  }
+
+  .sec2 .bd-callout-warning .text-warning1 {
+    font-size: 1.063rem;
+    font-weight: 300;
+  }
+
+  /* หมายเหตุอันที่ 1 */
+  .sec1 .bd-callout-warning .text-warning1 svg {
+    margin-bottom: 5px;
+  }
+
+  .sec1 .bd-callout-warning .text-head {
+    font-size: 1.125rem;
+    color: #982612;
+  }
+
+  .sec1 .bd-callout-warning .text-warning1 {
+    font-size: 1.125rem;
+  }
+
+  /* นำ้ยาซัก */
+  #content_h2 {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+
+  #text_p {
+    margin-left: 50px;
+    font-size: 1.063rem;
+    font-weight: 300;
+  }
+
+  #ele00 {
+    width: 350px;
+    height: 350px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* landscape tabelts */
+@media (max-width: 768px){
+    .parallax img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    
+  }
+
+  #namep4 {
+    position: relative;
+    width: 500px;
+    height: 600px;
+    transition: 0.2s;
+    margin-top: -30%;
+  }
+
+  /* ผ้ากันไรฝุ่น */
+  .sec2 .text_h1 {
+    font-size: 1.75rem;
+  }
+
+  /* colum 3 อัน */
+  #card-text {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  #text-head4 {
+    font-size: 1.25rem;
+  }
+
+  /* หมายเหตุอันที่ 2 */
+  .sec2 .bd-callout-warning .text-head {
+    font-size: 1rem;
+    transition: 0.2s;
+  }
+
+  .sec2 .bd-callout-warning .text-warning1 {
+    font-size: 1rem;
+    
+  }
+
+  /* หมายเหตุอันที่ 1 */
+  .sec1 .bd-callout-warning .text-warning1 svg {
+    margin-bottom: 5px;
+    width: 15px;
+
+  }
+
+  .sec1 .bd-callout-warning .text-head {
+    font-size: 1rem;
+  }
+
+  .sec1 .bd-callout-warning .text-warning1 {
+    font-size: 1rem;
+  }
+
+  /* นำ้ยาซัก */
+  #content_h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  #text_p {
+    margin-left: 0;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  #col-img{
+    width: 90%;
+
+  }
+
+}
+
+/* phon, less then 600px wide */
+@media (max-width: 600px){
+   .navbar-brand {
+    margin-left: 2%;
+  }
+  .navbar-toggler {
+    margin-right: 2%;
+  }
+
+  #MENU ul li a {
+    margin-left: 3%;
+  }
+
+  .parallax img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  #namep4 {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    transition: 0.2s;
+    margin-top: -50%;
+  }
+}
+

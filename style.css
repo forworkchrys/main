@@ -1,0 +1,469 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Kanit", sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: calc(60% + 0.8vmin);
+}
+
+body {
+  background-color: #f8d39f;
+  overflow-x: hidden;
+  z-index: 100;
+}
+
+.parallax {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.parallax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  pointer-events: none;
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.sec2 {
+  position: relative;
+  padding: 100px;
+  background: #264653;
+}
+
+/* end parallax */
+
+.section1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.section1 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+/* parallax */
+
+/* into */
+.title {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.1;
+  color: rgb(0, 0, 0);
+  /* margin: 0 0 20px 0; */
+  z-index: 50;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero__img {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 25;
+}
+
+.hero__content {
+  text-align: center;
+  position: relative;
+}
+
+.img__BG {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* end parallax */
+
+/* sec2 ลักษณะ */
+.sec2 {
+  position: relative;
+  padding: 100px;
+  background-color: #264653;
+}
+
+.sec2 .container .row .col-lg-7 p {
+  font-size: 1.25rem;
+  text-indent: 1rem;
+  font-weight: 300;
+}
+
+.sec2 .container .row .col-lg-7 .text01 {
+  font-size: 2.5rem;
+  text-indent: 1rem;
+}
+
+/* ชนิดไรฝุ่น */
+.sec3 {
+  position: relative;
+  padding: 40px;
+  background-color: #f8d39f;
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.equip {
+  cursor: pointer;
+}
+
+#textsec3_h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+ #textsec3_p{
+    font-size: 1.125rem;
+  }
+
+.sec4 {
+  background-color: #f8d39f;
+  position: relative;
+}
+
+/* popup */
+.equip-container .popup-equip {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 200;
+  display: none;
+}
+
+.equip-container .popup-equip span {
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  font-size: 50px;
+  font-weight: bolder;
+  color: white;
+  cursor: pointer;
+  z-index: 200;
+}
+
+.equip-container .popup-equip img {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* border: 5px solid #fff; */
+  border-radius: 10px;
+  width: 550px;
+  object-fit: cover;
+  background-color: #fff;
+}
+/* End popup */
+
+/* ชนิด */
+.c_3 {
+  overflow: hidden;
+}
+
+.c_3 img {
+  object-fit: cover;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.c_3 img:hover {
+  transform: scale(0.95);
+  transition: all 0.2s linear;
+  filter: brightness(80%);
+}
+
+/* END ชนิด */
+
+/* วงจร */
+.sec4 .container .card-body {
+  background-image: url(art/BG01.PNG);
+  background-size: cover;
+}
+
+#textcard_p{
+  font-size: 1.125rem;
+}
+
+/* footer */
+.blog-footer {
+  padding: 2.5rem 0;
+  padding-top: 5em;
+  color: #727272;
+  text-align: center;
+  /* background-color: #f9f9f9; */
+  background-image: url(art/footer.PNG);
+  background-size: cover;
+  position: relative;
+
+  /* border-top: 0.05rem solid #e5e5e5; */
+}
+/* end footer */
+
+/* responsive popup-image */
+
+@media (max-width: 768px) {
+  .container .popup-equip img {
+    width: 95%;
+  }
+}
+
+/* lapyops/destops,992 and up */
+@media (max-width: 992px) {
+  header .navbar-brand {
+    font-size: 16px;
+    padding-left: -10px;
+    transition: 0.2s;
+  }
+
+  .navbar-collapse ul li a {
+    font-size: 14px;
+    transition: 0.2s;
+  }
+
+  .parallax img {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+  }
+
+  #nameP1 {
+    position: relative;
+    margin-left: 20%;
+    width: 1200px;
+    height: 700px;
+    transition: 0.2s;
+  }
+
+  /* sec1 into */
+  .title {
+    font-size: 1.2rem;
+  }
+
+  /* sec2 ลักษณะ */
+.sec2{
+  padding: 50px;
+}
+
+  .sec2 .container .col {
+    justify-content: center;
+    align-items: center;
+    left: 13%;
+  }
+
+  .sec2 .container .col img {
+    align-items: center;
+    justify-items: auto;
+  }
+
+  .sec3 .container .row p {
+    font-weight: 200;
+  }
+
+  .carousel-inner img {
+    width: 100%;
+    height: 50%;
+  }
+
+  .sec4 .container .card-body {
+    object-fit: cover;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* ชนิดไรฝุ่น */
+@media (min-width: 992px) {
+  .sec3 .container .row .col {
+    height: 350px;
+  }
+}
+
+/* responsive popup-image */
+
+@media (max-width: 992px) {
+  .sec3 .container .popup-equip img {
+    width: 60%;
+    align-items: center;
+  }
+ 
+}
+
+/* landscape tabelts */
+@media (max-width: 768px) {
+  .parallax img {
+    top: 20px;
+    height: 100vh;
+    width: 100%;
+  }
+
+  #nameP1 {
+    position: relative;
+    margin-left: 40%;
+    width: 1000px;
+    height: 600px;
+  }
+
+  /* sec1 into */
+  .title {
+    font-size: 1.125rem;
+  }
+
+  /* sec2 ลักษณะ */
+  .sec2 .container .col {
+    justify-content: center;
+    align-items: center;
+    left: 8%;
+  }
+
+  .sec2 .container .col img {
+    align-items: center;
+    justify-items: auto;
+  }
+
+  #sec2_p {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  .sec2 .container .row .col-lg-7 .text01 {
+    font-size: 2rem;
+    text-indent: 1rem;
+  }
+
+  /* ชนิด */
+  #textsec3_h2 {
+    font-size: 2rem;
+  }
+
+  #textsec3_p{
+    font-size: 1rem;
+  }
+
+
+/* วงจรชีวิต */
+  .carousel-inner img {
+    width: 100%;
+    height: 50%;
+  }
+
+  #textcard_p {
+    font-size: 1rem;
+  }
+
+
+}
+
+/* phon, less then 600px wide */
+@media (max-width: 600px){
+
+  .navbar-brand {
+    margin-left: 2%;
+  }
+  .navbar-toggler {
+    margin-right: 2%;
+  }
+
+  #MENU ul li a {
+    margin-left: 3%;
+  }
+
+  .parallax img {
+    top: 20px;
+    height: 100vh;
+    width: 100%;
+  }
+
+  #nameP1 {
+    position: relative;
+    margin-left: 100%;
+    width: 1000px;
+    height: 550px;
+  }
+
+  .sec2{
+    padding: 20px;
+  }
+  .sec2 .container .col {
+    justify-content: center;
+    align-items: center;
+    left: 0;
+  }
+
+  .sec3 .container .row .col img {
+    height: 200px;
+    width: 100%;
+  }
+
+
+}
+
+/* phon, less then 600px wide */
+@media (max-width: 390px){
+
+   .parallax img {
+    top: 20px;
+    height: 100vh;
+    width: 100%;
+  }
+
+  #nameP1 {
+    position: relative;
+    margin-left: 100%;
+    width: 800px;
+    height: 450px;
+  }
+
+  .sec3  {
+    padding: 20px;
+  }
+
+   #sec2_p {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  .sec2 .container .row .col-lg-7 .text01 {
+    font-size: 1rem;
+    text-indent: 1rem;
+  }
+
+
+}
