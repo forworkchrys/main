@@ -413,9 +413,9 @@ body {
 
   #namep3 {
     position: absolute;
-    width: 400px;
-    height: 400px;
-    margin-top: 50%;
+    width: 500px;
+    height: 500px;
+    margin-top: 20%;
     transition: 0.2s;
   }
   
@@ -424,6 +424,22 @@ body {
     margin: 10px;
     align-items: center;
     justify-content: center;
+  }
+
+  .card-front img {
+    height: 450px;
+    padding: auto;
+  }
+}
+
+/* phon 12 pro, less then 390px wide */
+@media (max-width: 400px){
+  #namep3 {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    margin-top: 50%;
+    transition: 0.2s;
   }
 
   .card-front img {

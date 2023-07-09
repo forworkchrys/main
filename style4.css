@@ -449,10 +449,31 @@ body {
 
   #namep4 {
     position: relative;
+    width: 500px;
+    height: 500px;
+    transition: 0.2s;
+    margin-top: -20%;
+  }
+}
+
+/* phon 12 Pro, less then 400px wide */
+@media (max-width: 400px){
+
+  #namep4 {
+    position: absolute;
     width: 400px;
     height: 400px;
     transition: 0.2s;
-    margin-top: -50%;
+    margin-top: 30%;
   }
+
+  #ele404{
+    position: absolute;
+    width: 120%;
+    height: 95%;
+    margin-left: -5%;
+    margin-top: 10%;
+  }
+
 }
 
