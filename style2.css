@@ -17,9 +17,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-   background-size: cover;
+  background-size: cover;
   height: 100vh;
-  
 }
 
 .parallax_p2 img {
@@ -414,7 +413,6 @@ body {
 
 /* lapyops/destops,992 and up */
 @media (max-width: 992px) {
-  
   header .navbar-brand {
     font-size: 16px;
     padding-left: -10px;
@@ -645,6 +643,14 @@ body {
   .row-cols-7 {
     font-size: 1.5rem;
   }
+
+  .footer-text-head{
+    font-size: 1.125rem;
+  }
+
+  .footer-text{
+    font-size: 13px;
+  }
 }
 
 /* phon, less then 600px wide */
@@ -666,12 +672,12 @@ body {
   }
 
   #namep2 {
-    position: relative;
-    width: 500px;
-    height: 500px;
-    margin-right: 5%;
-   margin-top: -50%;
-    transition: .2s;
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    margin-left: -10px;
+    margin-top: 5%;
+    transition: 0.2s;
   }
 
   /* อาการตอบสนอง */
@@ -692,7 +698,7 @@ body {
     justify-content: center;
   }
 
-  .topic2 .equip-container .equip h3{
+  .topic2 .equip-container .equip h3 {
     font-size: 1.25rem;
   }
 
@@ -744,7 +750,7 @@ body {
     background-size: cover;
   }
 
-    /* หมายเหตุ รักษาโรคภูมิแพ้ให้หายขาดได้หรือไม่ */
+  /* หมายเหตุ รักษาโรคภูมิแพ้ให้หายขาดได้หรือไม่ */
   .bd-callout {
     max-width: 500px;
   }
@@ -759,6 +765,8 @@ body {
   .sec1 .bd-callout-warning .text-warning1 {
     font-size: 1rem;
     font-weight: 250;
+    margin: 8px;
+    
   }
 
   .row-cols-7 {
@@ -767,12 +775,47 @@ body {
   }
 
   /* footer */
-.blog-footer {
-  padding: 2rem 0;
-  padding-top: 5em;
+  .blog-footer {
+    padding: 2rem 0;
+    padding-top: 5em;
+  }
+
+
+  .footer-text-head{
+    font-size: 1rem;
+  }
+
+  .footer-text{
+    font-size: 11px;
+  }
+
+  /* end footer */
 }
 
-/* end footer */
+@media (max-width: 450px) {
+  #namep2{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    /* margin-left: 9%; */
+    margin-top: 20%;
+    transition: 0.2s;
+  }
 
+  #topic1_h1{
+    font-size: 1.5rem;
+  }
+   .sec1 .bd-callout-warning .text-warning1 {
+    text-align: justify;
+    margin: 0;
+    
+  }
+ .footer-text-head{
+    font-size: 1.125rem;
+  }
+
+  .footer-text{
+    font-size: 14px;
+  }
 
 }

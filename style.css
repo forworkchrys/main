@@ -336,9 +336,9 @@ body {
 
   #nameP1 {
     position: relative;
-    margin-left: 40%;
-    width: 1000px;
-    height: 600px;
+    margin-left: 90%;
+    width: 1300px;
+    height: 800px;
   }
 
   /* sec1 into */
@@ -413,7 +413,7 @@ body {
 
   #nameP1 {
     position: relative;
-    margin-left: 100%;
+    margin-left: 80%;
     width: 1000px;
     height: 550px;
   }
@@ -432,23 +432,34 @@ body {
     width: 100%;
   }
 
+  /* footer */
+  .blog-footer {
+    padding: 2rem 0;
+    padding-top: 5em;
+  }
+
+
+  .footer-text-head{
+    font-size: 1rem;
+  }
+
+  .footer-text{
+    font-size: 11px;
+  }
+
+  /* end footer */
+
 
 }
 
 /* phon, less then 600px wide */
-@media (max-width: 390px){
-
-   .parallax img {
-    top: 20px;
-    height: 100vh;
-    width: 100%;
-  }
+@media (max-width: 450px){
 
   #nameP1 {
     position: relative;
-    margin-left: 100%;
-    width: 800px;
-    height: 450px;
+    margin-left: 110%;
+    width: 1000px;
+    height: 500px;
   }
 
   .sec3  {
@@ -463,6 +474,14 @@ body {
   .sec2 .container .row .col-lg-7 .text01 {
     font-size: 1rem;
     text-indent: 1rem;
+  }
+
+  .footer-text-head{
+    font-size: 1.125rem;
+  }
+
+  .footer-text{
+    font-size: 14px;
   }
 
 

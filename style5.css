@@ -90,4 +90,21 @@
   .col-lg-6 {
     padding: 20px;
   }
+
+  /* footer */
+  .blog-footer {
+    padding: 2rem 0;
+    padding-top: 5em;
+  }
+
+
+  .footer-text-head{
+    font-size: 1rem;
+  }
+
+  .footer-text{
+    font-size: 11px;
+  }
+
+  /* end footer */
 }

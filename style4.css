@@ -417,8 +417,10 @@ body {
 
   #text_p {
     margin-left: 0;
+    padding: 3%;
     font-size: 1rem;
     font-weight: 300;
+    text-align: left;
   }
 
   #col-img{
@@ -454,17 +456,34 @@ body {
     transition: 0.2s;
     margin-top: -20%;
   }
+
+  /* footer */
+  .blog-footer {
+    padding: 2rem 0;
+    padding-top: 5em;
+  }
+
+
+  .footer-text-head{
+    font-size: 1rem;
+  }
+
+  .footer-text{
+    font-size: 11px;
+  }
+
+  /* end footer */
 }
 
 /* phon 12 Pro, less then 400px wide */
-@media (max-width: 400px){
+@media (max-width: 450px){
 
   #namep4 {
     position: absolute;
-    width: 400px;
+    width: 100%;
     height: 400px;
     transition: 0.2s;
-    margin-top: 30%;
+    margin-top: 40%;
   }
 
   #ele404{
@@ -475,5 +494,25 @@ body {
     margin-top: 10%;
   }
 
+   #text_p {
+    margin-left: 0;
+    padding: 5%;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: left;
+  }
+
+   .footer-text-head{
+    font-size: 1.125rem;
+  }
+
+  .footer-text{
+    font-size: 14px;
+  }
+
+
+
 }
+
+
 
